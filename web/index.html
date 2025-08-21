@@ -19,6 +19,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -42,33 +43,20 @@
       align-items: center;
       min-height: 100vh;
       font-family: Arial, sans-serif;
+      overflow: hidden;
     }
     
+    /* Let Flutter handle the sizing through ResponsiveLayoutWrapper */
     #flutter_target {
       width: 100%;
-      max-width: 1200px;
       height: 100vh;
-      max-height: 800px;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      background: white;
     }
     
     /* Responsive design */
     @media (max-width: 768px) {
       #flutter_target {
-        max-width: 95vw;
-        max-height: 95vh;
-        border-radius: 15px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      #flutter_target {
-        max-width: 100vw;
-        max-height: 100vh;
-        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
       }
     }
   </style>
