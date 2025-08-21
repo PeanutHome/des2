@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+import 'screens/homepage.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Burmese Lottery App',
+      theme: ThemeData(
+        
+        primarySwatch: Colors.amber,
+        brightness: Brightness.dark,
+        useMaterial3: true,
+      ),
+      home: const HomePage(),
+    );
+  }
+}
