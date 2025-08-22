@@ -25,8 +25,8 @@ class BlinkingNumbersWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.symmetric(horizontal: 0),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: accentGold.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(16),

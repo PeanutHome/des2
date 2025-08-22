@@ -145,7 +145,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           ),
                           // Temporary test buttons for debugging
                           Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 16),
+                            margin: const EdgeInsets.symmetric(horizontal: 0),
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: Row(
                               children: [
                                 Expanded(

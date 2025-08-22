@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../constants/app_colors.dart';
+import '../services/auth_service.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -917,22 +919,24 @@ class _SettingsPageState extends State<SettingsPage> with TickerProviderStateMix
                 style: TextStyle(color: AppColors.textGrey),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-                // TODO: Implement logout functionality
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('အကောင့်မှ ထွက်ပြီးပါပြီ'),
-                    backgroundColor: AppColors.brightGold,
-                  ),
-                );
-              },
-              child: Text(
-                'ထွက်ရန်',
-                style: TextStyle(color: Colors.red),
+                          TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  // Implement logout functionality using AuthService
+                  final authService = Provider.of<AuthService>(context, listen: false);
+                  authService.logout();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('အကောင့်မှ ထွက်ပြီးပါပြီ'),
+                      backgroundColor: AppColors.brightGold,
+                    ),
+                  );
+                },
+                child: Text(
+                  'ထွက်ရန်',
+                  style: TextStyle(color: Colors.red),
+                ),
               ),
-            ),
           ],
         );
       },
