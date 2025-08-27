@@ -275,11 +275,11 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
           children: [
             // Time Info Section
             Container(
-              margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               decoration: BoxDecoration(
                 color: AppColors.brightGold.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: AppColors.brightGold.withOpacity(0.3)),
               ),
               child: Row(
@@ -292,7 +292,7 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
                         'ညနေ 12:01 ထီထိုး',
                         style: TextStyle(
                           color: AppColors.brightGold,
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -300,7 +300,7 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
                         'ထီထိုးချိန်: ညနေ 12:01',
                         style: TextStyle(
                           color: AppColors.textGrey,
-                          fontSize: 12,
+                          fontSize: 11,
                         ),
                       ),
                     ],
@@ -308,7 +308,7 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
                   Icon(
                     Icons.access_time,
                     color: AppColors.brightGold,
-                    size: 24,
+                    size: 20,
                   ),
                 ],
               ),
@@ -389,11 +389,11 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
 
             // Betting Section
             Container(
-              margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               decoration: BoxDecoration(
                 color: AppColors.accentGold.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: AppColors.accentGold.withOpacity(0.3)),
               ),
               child: Column(
@@ -476,7 +476,7 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
                   // Quick Select Dropdown
                   SizedBox(
                     width: double.infinity,
@@ -490,10 +490,10 @@ class _TwoDEveningPageState extends State<TwoDEveningPage> {
                       'ရွေးချယ်မှုများ ဖျက်ရန်',
                     ]),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
                   SizedBox(
                     width: double.infinity,
-                    height: 50,
+                    height: 40,
                     child: ElevatedButton(
                       onPressed: _isLoading ? null : _placeBet,
                       style: ElevatedButton.styleFrom(

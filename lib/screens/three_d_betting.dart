@@ -275,11 +275,11 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
           children: [
             // Time Info Section
             Container(
-              margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               decoration: BoxDecoration(
                 color: AppColors.brightGold.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: AppColors.brightGold.withOpacity(0.3)),
               ),
               child: Row(
@@ -292,7 +292,7 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
                         '3D ထီထိုး',
                         style: TextStyle(
                           color: AppColors.brightGold,
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -300,7 +300,7 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
                         'ထီထိုးချိန်: နေ့စဉ်',
                         style: TextStyle(
                           color: AppColors.textGrey,
-                          fontSize: 12,
+                          fontSize: 11,
                         ),
                       ),
                     ],
@@ -308,7 +308,7 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
                   Icon(
                     Icons.access_time,
                     color: AppColors.brightGold,
-                    size: 24,
+                    size: 20,
                   ),
                 ],
               ),
@@ -387,11 +387,11 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
 
             // Betting Section
             Container(
-              margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               decoration: BoxDecoration(
                 color: AppColors.accentGold.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: AppColors.accentGold.withOpacity(0.3)),
               ),
               child: Column(
@@ -474,7 +474,7 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
                   // Quick Select Dropdown
                   SizedBox(
                     width: double.infinity,
@@ -488,10 +488,10 @@ class _ThreeDBettingPageState extends State<ThreeDBettingPage> {
                       'ရွေးချယ်မှုများ ဖျက်ရန်',
                     ]),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
                   SizedBox(
                     width: double.infinity,
-                    height: 50,
+                    height: 40,
                     child: ElevatedButton(
                       onPressed: _isLoading ? null : _placeBet,
                       style: ElevatedButton.styleFrom(
